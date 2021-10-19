@@ -43,17 +43,17 @@ class PlayChampionship:
 
     def generate_first_round(self):
 
-        players_grid = sorted(self.championship.players, key=lambda player: player.rank)
-       
+        players_grid = sorted(self.championship.players,
+                              key=lambda player: player.rank)
 
         for player1 in players_grid[:int(len(players_grid)/2)]:
-            
 
             print(player1.first_name)
             for player2 in players_grid[int(len(players_grid)/2)+1:]:
-                
-                match = Match([player1.id, 0],[player2.id, 0])
-               
-                import pdb; pdb.set_trace()
+
+                match = Match([player1.id, 0], [player2.id, 0])
+
+                import pdb
+                pdb.set_trace()
 
                 self.championship.rounds[0].matchs.append(match)
