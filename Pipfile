@@ -4,6 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+tinydb = "*"
+simple-term-menu = "*"
+flake8-html = "*"
 
 [dev-packages]
 
